@@ -1,0 +1,161 @@
+/* styles.css (최소 예시) */
+body {
+  background: #f7f5ec;
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  margin: 0;
+}
+
+.app-wrapper {
+  width: 375px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #f7f5ec;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+}
+
+.header-title {
+  color: #388e3c;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.progress-bar {
+  position: relative;
+  width: 160px;
+  height: 80px;
+}
+
+.progress-percent {
+  margin-top: 0.5rem;
+  color: #35843a;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.todolist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem; /* (기존 0.6rem에서 1.2rem로 2배) */
+  padding: 0 1.5rem 8rem 1.5rem;
+}
+
+
+.todoitem {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 1.1rem;
+  padding: 0.85rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(60,100,40,0.07);
+}
+
+.todoitem input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #388e3c;
+}
+
+.todoitem span {
+  margin-left: 0.7rem;
+  font-size: 1.1rem;
+  color: #385e3c;
+}
+
+.todoitem input:checked + span {
+  text-decoration: line-through;
+  color: #b3b3b3;
+}
+
+.addtodo-btn {
+  position: fixed;
+  bottom: 2.3rem;
+  right: 2.3rem;
+  background: #65b967;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 62px;
+  height: 62px;
+  box-shadow: 0 4px 18px rgba(65,120,60,0.18);
+  font-size: 2.3rem;
+  cursor: pointer;
+}
+
+.addtodo-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.22);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+.addtodo-modal {
+  background: white;
+  width: 90vw;
+  max-width: 370px;
+  border-radius: 2rem;
+  padding: 2rem 1.2rem 1.5rem 1.2rem;
+  position: relative;
+  box-shadow: 0 8px 30px rgba(80,110,60,0.15);
+}
+
+.addtodo-modal h2 {
+  color: #388e3c;
+  font-weight: bold;
+  margin-bottom: 1.1rem;
+  font-size: 1.3rem;
+}
+
+.addtodo-modal input[type="text"], .addtodo-modal input[type="date"], .addtodo-modal textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.7rem;
+  border: 1px solid #e1e4e8;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.addtodo-modal label {
+  font-size: 0.95rem;
+  color: #757575;
+}
+
+.addtodo-modal input[type="checkbox"] {
+  margin-right: 0.6rem;
+  accent-color: #65b967;
+  width: 18px;
+  height: 18px;
+}
+
+.addtodo-modal .save-btn {
+  display: block;
+  width: 100%;
+  padding: 0.9rem 0;
+  background: #65b967;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
