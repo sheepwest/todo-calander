@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/todo-calander/static/css/main.f67b0f40.css",
+    "main.js": "/todo-calander/static/js/main.46d2cf19.js",
+    "index.html": "/todo-calander/index.html",
+    "main.f67b0f40.css.map": "/todo-calander/static/css/main.f67b0f40.css.map",
+    "main.46d2cf19.js.map": "/todo-calander/static/js/main.46d2cf19.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f67b0f40.css",
+    "static/js/main.46d2cf19.js"
+  ]
+}
